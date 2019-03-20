@@ -1,0 +1,78 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: auto;
+}
+.social-link {
+  font-size: 50px;
+  transition: all .2s ease-in-out;
+}
+.social-link:hover {
+  color: rgb(66, 65, 65);
+  transform: scale(1.25);
+}
+
+.project-description {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  opacity: 0;
+}
+
+.project-description a {
+  margin-left: 10px;
+}
+
+.project-description a:hover {
+  margin-left: 0;
+  padding: 10px;
+  background-color: rgb(66, 65, 65);
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+}
+
+.project:hover .project-title {
+  animation-name: projectGrow;
+  animation-timing-function: linear;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+.project:hover .project-description {
+  animation-name: projectShow;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes projectGrow {
+  25% {
+    width: inherit;
+    height: inherit;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+  }
+  75% {
+    width: 75%;
+    height: 75%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes projectShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

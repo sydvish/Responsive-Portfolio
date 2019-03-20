@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <title>W3.CSS Template</title>
+  <title>Syd The Squid</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css"
+    integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css"
+    integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+"
+    crossorigin="anonymous"
+  />
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#home" class="w3-bar-item w3-button"><b>SV</b> Profile</a>
+        <a href="#" data-target="#home" class="w3-bar-item w3-button"
+          ><b>SV</b> Profile</a
+        >
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
-          <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-          <a href="#about" class="w3-bar-item w3-button">About</a>
-          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+          <a href="#" data-target="#home" class="w3-bar-item w3-button">Home</a>
+          <a href="#" data-target="#projects" class="w3-bar-item w3-button"
+            >Projects</a
+          >
+          <a href="#" data-target="#about" class="w3-bar-item w3-button"
+            >About</a
+          >
+          <a href="#" data-target="#contact" class="w3-bar-item w3-button"
+            >Contact</a
+          >
         </div>
       </div>
     </div>
@@ -26,7 +49,7 @@
     >
       <img
         class="w3-image"
-        src="images2/handsonkeyboard.jpeg"
+        src="assets/img/handsonkeyboard.jpeg"
         alt="Architecture"
         width="1500"
         height="800"
@@ -49,104 +72,217 @@
       </div>
 
       <div class="w3-row-padding">
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">
+            <div class="w3-display-topleft w3-black w3-padding project-title">
               Project 1
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://slawless05.github.io/project-1/" target="_blank">Check it out!</a>
+              </div>
             </div>
-            <a href="https://slawless05.github.io/project-1/" target="_blank"><img src="images2/greytable.jpeg" alt="House" style="width:100%"></a>
+            <img class="project-img" src="assets/img/greytable.jpeg" alt="House" />
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">
+            <div class="w3-display-topleft w3-black w3-padding project-title">
               Project 2
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://obscure-atoll-11517.herokuapp.com/" target="_blank">Check it out!</a>
+              </div>
             </div>
-            <a href="https://obscure-atoll-11517.herokuapp.com/" target="_blank">
-            <img src="images2/multicolors.jpeg" alt="House" style="width:100%"></a>
+
+            <img
+              class="project-img"
+              src="assets/img/multicolors.jpeg"
+              alt="House"
+            />
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Bamazon</div>
-            <a href="https://sydvish.github.io/bamazon/" target="_blank">
-            <img src="images2/computertable.jpeg" alt="House" style="width:100%"></a>
+            <div class="w3-display-topleft w3-black w3-padding project-title">
+              Bamazon
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://sydvish.github.io/bamazon/" target="_blank">Check it out!</a>
+              </div>
+            </div>
+
+            <img
+              class="project-img"
+              src="assets/img/computertable.jpeg"
+              alt="House"
+            />
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Liri-Bot</div>
-            <a href="https://sydvish.github.io/liri-node-app/." target="_blank">
-            <img src="images2/graylaptop.jpeg" alt="House" style="width:100%"></a>
+            <div class="w3-display-topleft w3-black w3-padding project-title">
+              Liri-Bot
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://sydvish.github.io/liri-node-app/." target="_blank">Check it out!</a>
+              </div>
+            </div>
+
+            <img
+              class="project-img"
+              src="assets/img/graylaptop.jpeg"
+              alt="House"
+            />
           </div>
         </div>
       </div>
 
       <div class="w3-row-padding">
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">
+            <div class="w3-display-topleft w3-black w3-padding project-title">
               Eat-Da-Burger
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://sydvish.github.io/burger/." target="_blank">Check it out!</a>
+              </div>
             </div>
-            <a href="https://sydvish.github.io/burger/." target="_blank">
-            <img src="images2/silverheadphones.jpeg" alt="House" style="width:99%"></a>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">
-              Friend Finder
-            </div>
-            <a href="https://sydvish.github.io/FriendFinder/" target="_blank">
-            <img src="images2/friendfinder.jpeg" alt="House" style="width:99%"></a>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Giphy</div>
-            <a href="https://sydvish.github.io/Giphy/" target="_blank">
-            <img src="images2/coderheadphones.jpeg" alt="House" style="width:99%"></a>
 
+            <img
+              class="project-img"
+              src="assets/img/silverheadphones.jpeg"
+              alt="House"
+            />
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom project">
           <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Clicky Game</div>
-            <a href=" https://warm-citadel-49751.herokuapp.com/" target="_blank">
-            <img src="images2/computertable2.jpeg" alt="House" style="width:99%"></a>
+            <div class="w3-display-topleft w3-black w3-padding project-title">
+              Friend Finder
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://sydvish.github.io/FriendFinder/" target="_blank">Check it out!</a>
+              </div>
+            </div>
+
+            <img
+              class="project-img"
+              src="assets/img/friendfinder.jpeg"
+              alt="House"
+            />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom project">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding project-title">
+              Giphy
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="#">Check it out!</a>
+              </div>
+            </div>
+
+            <img
+              class="project-img"
+              src="assets/img/coderheadphones.jpeg"
+              alt="House"
+            />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom project">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding project-title">
+              Clicky Game
+              <div class="project-description">
+                <p>This is the best project ever</p>
+                <a href="https://warm-citadel-49751.herokuapp.com/" target="_blank">Check it out!</a>
+              </div>
+            </div>
+
+            <img
+              class="project-img"
+              src="assets/img/computertable2.jpeg"
+              alt="House"
+            />
           </div>
         </div>
       </div>
 
       <!-- About Section -->
       <div class="w3-container w3-padding-32" id="about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-            <h3>Sydney Volk</h3>
-            <p class="w3-opacity">Web Developer</p>
-                      <img src="images2/face4.jpeg" class="auth-image" alt="Your Name" img style="padding: 15px; float: left" width="300" height="325">
-                
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          About
+        </h3>
+        <h3>Sydney Volk</h3>
+        <p class="w3-opacity">Web Developer</p>
+        <img
+          src="assets/img/face4.jpeg"
+          class="auth-image"
+          alt="Your Name"
+          img
+          style="padding: 15px; float: left"
+          width="300"
+          height="325"
+        />
 
-                      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
-                      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <br>
-                      <br>
-                
-                      <p>
-                        <button class="w3-button w3-light-grey w3-block" style="width: 35%"><a href="https://www.linkedin.com/in/sydneyvolk" target="_blank">Visit my LinkedIn Profile</button></p>
-                      <p>
-                        <button class="w3-button w3-light-grey w3-block" style="width: 35%"><a href="https://github.com/sydvish" target="_blank">Visit my GitHub Profile</button></p> 
-                  </div>
-                
-        
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris
+          sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui
+          massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum
+          consectetur euismod. Proin commodo purus vitae sollicitudin
+          consectetur.
+        </p>
+
+        <p>
+          Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices,
+          ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam
+          eget, egestas mauris. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt
+          nunc, sit amet egestas nibh tortor et mi. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <br />
+        <br />
+
+        <div class="w3-center social-links">
+          <a href="https://www.linkedin.com/in/sydneyvolk" target="_blank"
+            ><i class="fab fa-linkedin social-link"></i
+          ></a>
+
+          <a href="https://github.com/sydvish" target="_blank"
+            ><i class="fab fa-github-alt social-link"></i
+          ></a>
+        </div>
+      </div>
+
       <!-- Contact Section -->
       <div class="w3-container w3-padding-32" id="contact">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
           Contact
         </h3>
         <p>Lets get in touch and talk about your next project.</p>
-        <form action="https://formspree.io/sydmvolk@gmail.com" method="POST" target="_blank">
+        <form
+          action="https://formspree.io/sydmvolk@gmail.com"
+          method="POST"
+          target="_blank"
+        >
           <input
             class="w3-input w3-border"
             type="text"
@@ -183,15 +319,24 @@
 
       <!-- Image of location/map -->
       <div class="w3-container">
-        <img src="images2/map1.jpeg" class="w3-image" style="width:100%; height:525px"/>
+        <img
+          src="assets/img/map1.jpeg"
+          class="w3-image"
+          style="width:100%; height:525px"
+        />
       </div>
-      <br>
+      <br />
 
       <!-- End page content -->
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-    </footer>
+    <footer class="w3-center w3-black w3-padding-16"></footer>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
