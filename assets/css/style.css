@@ -40,6 +40,7 @@
   animation-timing-function: linear;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+  opacity: .75;
 }
 .project:hover .project-description {
   animation-name: projectShow;
