@@ -77,3 +77,45 @@
     opacity: 1;
   }
 }
+
+.fab {
+  position: relative;
+  min-height: 1px;
+  flex-basis: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: purple;
+}
+
+.MuiGrid-container-186 {
+ display: flex;
+ flex-wrap: wrap;
+ box-sizing: border-box;
+ justify-content: center;
+ padding-top: 35px;
+}
+
+.GridItem-grid-283 {
+  /* width: 100%; */
+  position: relative;
+  min-height: 1px;
+  flex-basis: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@font-face {
+  font-family:"technology-icons";
+  src:url("../fonts/technology-icons.eot");
+  font-weight:normal;
+  font-style:normal;
+}@font-face {
+font-family:"technology-icons";
+src:url("../fonts/technology-icons.eot");
+src:url("../fonts/technology-icons.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/technology-icons.woff") format("woff"),
+  url("../fonts/technology-icons.ttf") format("truetype"),
+  url("../fonts/technology-icons.svg?#technology-icons") format("svg");
+font-weight:normal;
+font-style:normal;
+}
